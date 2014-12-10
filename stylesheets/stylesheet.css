@@ -36,7 +36,7 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0);
   width: 100%;
   border-bottom: 1px dashed #662483;
   padding: 20px 0;
