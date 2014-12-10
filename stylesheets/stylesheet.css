@@ -235,6 +235,9 @@ a:link {
     background: #ffed00;
     color: #662483
 }
+
+a.sponsor:link {
+}
 /* Clearfix */
 
 .cf:before, .cf:after {
