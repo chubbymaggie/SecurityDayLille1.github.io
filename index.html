@@ -227,7 +227,7 @@ MWR’s services range across professional and managed services, technical solut
 <a id="abstracts" class="anchor" href="#abstracts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Short descriptions</h3>
 
 <h4>
-<a id="breaking-cube" class="anchor" href="#breaking-cube" aria-hidden="true"><span class="octicon octicon-link"></span></a>Breaking the Cube - Guy 'Shift'
+<a id="breaking-cube" class="anchor" href="#breaking-cube" aria-hidden="true"><span class="octicon octicon-link"></span></a>Breaking the Cube
 </h4>
 Nowadays virtualization is used as an isolation mechanism to provide the ability to separate one OS from another,
 while hypervisors try to fulfill this cause faithfully, the design and implementation of the software which runs
@@ -243,6 +243,25 @@ hypervisors.
 </h4>
 This talk will discuss how you can leverage symbolic code execution & theorem provers for reverse-engineering & computer security purposes. The first part of the talk will attempt to both give a solid overview of Z3's features and to present what theorem provers can or cannot do. The last part will focus practical reverse-engineering examples where symbolic execution & Z3 have been used to tackle different problems / challenges. 
 
+<h4>
+<a id="djo" class="anchor" href="#djo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Program analysis : dynamic binary analysis and instrumentation
+</h4>
+This talk is about binary analysis and instrumentation. We will see how it's possible to target a specific function, snapshot the context memory/registers before the function, translate the instrumentation into an intermediate representation,apply a taint analysis based on this IR, build/keep formulas for a Dynamic Symbolic Execution (DSE), generate a concrete value to go through a specific path, restore the context memory/register and generate another concrete value to go through another path then repeat this operation until the target function is covered. This little project is based on Pin and Z3 and the Pintool will probably be released.
+
+<h4>
+<a id="emilien" class="anchor" href="#emilien" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solving NoSuchCrackme level3: a remote side-channel attack on RSA
+</h4>
+NoSuchCrackme is a challenge that was released for the 2014 edition of the NoSuchCon security conference. This talk gives a write up on how to solve the last level of the challenge, which is the exploitation of a remote secure message storing service. It consists in first exploiting a buffer overflow and then attacking a "software TPM" implemented as a second service. Because of a SECCOMP-based sandbox enforced on both services, the only way is to perform a time based side-channel attack. We describe the Flush+Reload attack published in 2013, targeting the L3 cache of x86 CPUs. We show how to implement this attack as a buffer overflow payload, and how to recover the private RSA key based on the exfiltrated measures.
+
+<h4>
+<a id="samuel" class="anchor" href="#samuel" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inside VMProtect
+</h4>
+Virtualization obfuscation is one of the features used in modern software protections and can be a problematic during malware static analysis. The aim of this talk is to present VMprotect, a software protector that offers this feature and many others, it will give a focus on how the code virtualization is done and how to remove it by using static analysis tools.
+
+<h4>
+<a id="emdel" class="anchor" href="#emdel" aria-hidden="true"><span class="octicon octicon-link"></span></a>Memory analysis: a Volatility primer
+</h4>
+Memory forensics is a really powerful discipline and is extensively used by either researchers or analysts. This talk provides a walk-through of Volatility, the de-facto open source memory forensic framework. In the first part of the talk the Windows and Linux cores will be dissected, it will be shown how the framework works behind the curtains. In the second part the experimental virtualization support will be introduced, the hypervisor structures will be uncovered as well as the Volatility transparent support for virtual machines.
 
       </section>
     </div>
